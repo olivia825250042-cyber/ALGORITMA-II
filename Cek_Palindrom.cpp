@@ -1,11 +1,10 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 int main() {
     int angka, asli, balik = 0, sisa;
 
-    cout << "Masukkan angka: ";
-    cin >> angka;
+    printf("Masukkan angka: ");
+    scanf("%d", &angka);
 
     asli = angka;
 
@@ -16,9 +15,9 @@ int main() {
     }
 
     if (asli == balik)
-        cout << "Palindrom";
+        printf("Palindrom\n");
     else
-        cout << "Bukan Palindrom";
+        printf("Bukan Palindrom\n");
 
     return 0;
 }
